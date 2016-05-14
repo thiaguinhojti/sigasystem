@@ -1,0 +1,166 @@
+<menu>
+    <menuitem label='Administração'>
+        <icon>fa:university fa-fw</icon>
+        <menu>
+              <menuitem label='Empresa'>
+                  <icon>fa:file-code-o fa-fw</icon>
+                  <action>FrmSystemCompany</action>
+              </menuitem>
+              <menuitem label='Programas'>
+                  <icon>fa:file-code-o fa-fw</icon>
+                  <action>SystemProgramList</action>
+              </menuitem>
+              <menuitem label='Grupos'>
+                  <icon>fa:users fa-fw</icon>
+                  <action>SystemGroupList</action>
+              </menuitem>
+              <menuitem label='Usuários'>
+                  <icon>fa:user fa-fw</icon>
+                  <action>SystemUserList</action>
+              </menuitem>
+              <menuitem label='Painel SQL'>
+                  <icon>fa:table fa-fw</icon>
+                  <action>SystemSQLPanel</action>
+              </menuitem>
+       </menu>
+    </menuitem>
+    
+    <menuitem label='Logs'>
+        <icon>fa:desktop fa-fw</icon>
+        <menu>
+              <menuitem label='Access Log'>
+                  <icon>fa:key fa-fw</icon>
+                  <action>SystemAccessLogList</action>
+              </menuitem>
+              <menuitem label='Change Log'>
+                  <icon>fa:film fa-fw</icon>
+                  <action>SystemChangeLogView</action>
+              </menuitem>
+              <menuitem label='SQL Log'>
+                  <icon>fa:database fa-fw</icon>
+                  <action>SystemSqlLogList</action>
+              </menuitem>
+        </menu>
+    </menuitem>
+        
+    <menuitem label='Cadastros'>
+        <menu>
+            <menuitem label='Tanque'>
+                <icon>fa:cube fa-fw</icon>
+                <action>FrmTanque</action>
+            </menuitem>
+            <menuitem label='Incubadora'>
+                <icon>fa:cube fa-fw</icon>
+                <action>FrmIncubadora</action>
+            </menuitem>
+            <menuitem label='Tipo Especie'>
+                <icon></icon>
+                <action>FrmTipoEspecie</action>
+            </menuitem>
+            <menuitem label='Familia Especie'>
+                <icon>fa:users fa-fw</icon>
+                <action>FrmFamiliaEspecie</action>
+            </menuitem>
+            <menuitem label='Especie'>
+                <icon>fa:user fa-fw</icon>
+                <action>FrmEspecie</action>
+            </menuitem>
+            <menuitem label='Matriz'>
+                <icon>fa:user fa-fw</icon>
+                <action>FrmMatriz</action>
+            </menuitem>
+            <menuitem label='Hormonios'>
+                <icon>fa:fa fa-flask fa-fw</icon>
+                <action>FrmHormonio</action>
+            </menuitem>
+            <menuitem label='Soro'>
+                <icon>fa:fa fa-flask fa-fw</icon>
+                <action>FrmSoro</action>
+            </menuitem>
+        </menu>
+    </menuitem>
+    <menuitem label='Manejo'>
+        <menu>
+              <menuitem label='Lançar Matrizes'>
+                  <icon>fa:fa fa-bug</icon>
+                  <action>FrmInclusaoMatrizTanque</action>
+              </menuitem>
+              <menuitem label='Aplicação'>
+                  <icon></icon>
+                  <action>FrmAplicacaoHormonio</action>
+              </menuitem>
+              <menuitem label='Reprodução'>
+                  <icon>fa:fa fa-venus-mars</icon>
+                  <action>FrmListaReproducao</action>
+              </menuitem>
+              <menuitem label='Aplicação de Hormônio'>
+                  <icon>fa:fa fa-venus-mars</icon>
+                  <action>FrmSolucao</action>
+              </menuitem>
+        </menu>
+                
+    </menuitem>
+    <menuitem label='Consultas'>
+        <menu>
+              <menuitem label='Consultar Tanques'>
+                  <icon>fa:fa fa fa-table</icon>
+                  <action>FrmListaTanque</action>
+              </menuitem>
+              <menuitem label='Consultar Incubadoras'>
+                  <icon>fa:fa fa fa-table</icon>
+                  <action>FrmListaIncubadora</action>
+              </menuitem>
+              <menuitem label='Consultar Espécies'>
+                  <icon>fa:fa fa fa-table</icon>
+                  <action>FrmListaEspecie</action>
+              </menuitem>
+              <menuitem label='Consultar Familias'>
+                  <icon>fa:fa fa fa-table</icon>
+                  <action>FrmListaFamiliaEspecie</action>
+              </menuitem>
+               <menuitem label='Consultar Soro'>
+                  <icon>fa:fa fa fa-table</icon>
+                  <action>FrmListaSoro</action>
+              </menuitem>
+              <menuitem label='Consultar Hormônios'>
+                  <icon>fa:fa fa fa-table</icon>
+                  <action>FrmListaHormonio</action>
+              </menuitem>
+               <menuitem label='Consultar Matrizes'>
+                  <icon>fa:fa fa fa-table</icon>
+                  <action>FrmListaMatriz</action>
+              </menuitem>
+              <menuitem label='Consultar Reproduções'>
+                  <icon>fa:fa fa fa-table</icon>
+                  <action>FrmListaReproducao</action>
+              </menuitem>
+        </menu>
+    </menuitem>
+    <menuitem label='Relatórios'>
+        <menu>
+              <menuitem label='Espécie'>
+                  <icon></icon>
+                  <action>FrmRelEspecie</action>
+              </menuitem>
+              <menuitem label='Reprodução'>
+                  <icon></icon>
+                  <action>FrmRelReproducao</action>
+              </menuitem>
+              
+       </menu>
+    </menuitem>
+    
+    <menuitem label='Logout'>
+        <menu>
+              <menuitem label='Profile'>
+                  <icon></icon>
+                  <action>SystemProfileView</action>
+              </menuitem>
+              
+              <menuitem label='Logout'>
+                  <action>LoginForm#method=onLogout#static=1</action>
+                  <icon>fa:sign-out fa-fw</icon>
+              </menuitem>
+        </menu>
+    </menuitem>
+</menu>

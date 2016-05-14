@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <tnotebook id="0">
+        <class>TNotebook</class>
+        <name>FrmReproducao</name>
+        <x>0</x>
+        <y>0</y>
+        <width>764</width>
+        <height>565</height>
+        <pages>
+            <tpanel id="1" tab="Aplicação Hormônio">
+                <tframe id="0">
+                    <class>TFrame</class>
+                    <name>fraCabecalhoRep</name>
+                    <title>Reprodição</title>
+                    <x>1</x>
+                    <y>1</y>
+                    <width>760</width>
+                    <height>120</height>
+                    <child>
+                        <tpanel>
+                            <tlabel id="0">
+                                <class>TLabel</class>
+                                <name>Titulo</name>
+                                <x>10</x>
+                                <y>15</y>
+                                <color>#000000</color>
+                                <size>18</size>
+                                <style></style>
+                                <value>Controle de Reprodução</value>
+                            </tlabel>
+                            <tlabel id="1">
+                                <class>TLabel</class>
+                                <name>label6</name>
+                                <x>10</x>
+                                <y>65</y>
+                                <color>#000000</color>
+                                <size>13</size>
+                                <style></style>
+                                <value>Responsável:</value>
+                            </tlabel>
+                            <tentry id="2">
+                                <class>TEntry</class>
+                                <name>responsavelApllicacao</name>
+                                <x>120</x>
+                                <y>65</y>
+                                <value></value>
+                                <mask></mask>
+                                <width>274</width>
+                                <maxlen>0</maxlen>
+                                <editable>1</editable>
+                                <tip></tip>
+                                <required></required>
+                            </tentry>
+                            <tlabel id="3">
+                                <class>TLabel</class>
+                                <name>label7</name>
+                                <x>485</x>
+                                <y>20</y>
+                                <color>#000000</color>
+                                <size>10</size>
+                                <style></style>
+                                <value>label</value>
+                            </tlabel>
+                        </tpanel>
+                    </child>
+                </tframe>
+            </tpanel>
+            <tpanel id="2" tab="Registra HoraGrau"/>
+            <tpanel id="3" tab="Registros de Reprodução"/>
+        </pages>
+    </tnotebook>
+</form>

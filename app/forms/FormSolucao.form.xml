@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <tnotebook id="0">
+        <class>TNotebook</class>
+        <name>reproducao</name>
+        <x>10</x>
+        <y>10</y>
+        <width>732</width>
+        <height>514</height>
+        <pages>
+            <tpanel id="1" tab="sheet1">
+                <tlabel id="0">
+                    <class>TLabel</class>
+                    <name>reprodução</name>
+                    <x>5</x>
+                    <y>30</y>
+                    <color>#000000</color>
+                    <size>10</size>
+                    <style></style>
+                    <value>REPRODUÇÃO..:</value>
+                </tlabel>
+                <tdbcombo id="1">
+                    <class>TDBCombo</class>
+                    <name>reproducao</name>
+                    <database>dbwf</database>
+                    <model>Reproducao</model>
+                    <key>idReproducao</key>
+                    <display>codigo</display>
+                    <x>110</x>
+                    <y>25</y>
+                    <width>100</width>
+                    <tip>Selecione o número da Reprodução</tip>
+                    <value>1</value>
+                </tdbcombo>
+                <tlabel id="2">
+                    <class>TLabel</class>
+                    <name>totalSoro</name>
+                    <x>5</x>
+                    <y>70</y>
+                    <color>#000000</color>
+                    <size>10</size>
+                    <style></style>
+                    <value>SORO..:</value>
+                </tlabel>
+            </tpanel>
+            <tpanel id="2" tab="newpage"/>
+        </pages>
+    </tnotebook>
+</form>

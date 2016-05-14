@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <tframe id="0">
+        <class>TFrame</class>
+        <name>fraAplicacao</name>
+        <title>Dados Aplicação</title>
+        <x>90</x>
+        <y>10</y>
+        <width>821</width>
+        <height>585</height>
+        <child>
+            <tpanel>
+                <tlabel id="0">
+                    <class>TLabel</class>
+                    <name>lblCodigo</name>
+                    <x>10</x>
+                    <y>30</y>
+                    <color>#000000</color>
+                    <size>12</size>
+                    <style></style>
+                    <value>CÓDIGO...........................:</value>
+                </tlabel>
+                <tlabel id="1">
+                    <class>TLabel</class>
+                    <name>lblDtAplicacao</name>
+                    <x>10</x>
+                    <y>70</y>
+                    <color>#000000</color>
+                    <size>12</size>
+                    <style></style>
+                    <value>DATA APLICAÇÃO.....:</value>
+                </tlabel>
+                <tlabel id="2">
+                    <class>TLabel</class>
+                    <name>lblPesoMatFemea</name>
+                    <x>10</x>
+                    <y>115</y>
+                    <color>#000000</color>
+                    <size>12</size>
+                    <style></style>
+                    <value>PESO MATRIZ F...........:</value>
+                </tlabel>
+                <tlabel id="3">
+                    <class>TLabel</class>
+                    <name>lblPesoMatMacho</name>
+                    <x>10</x>
+                    <y>160</y>
+                    <color>#000000</color>
+                    <size>12</size>
+                    <style></style>
+                    <value>PESO MATRIZ M.........:</value>
+                </tlabel>
+                <tlabel id="4">
+                    <class>TLabel</class>
+                    <name>lblSoro</name>
+                    <x>10</x>
+                    <y>210</y>
+                    <color>#000000</color>
+                    <size>11</size>
+                    <style></style>
+                    <value>SORO..................................:</value>
+                </tlabel>
+                <tlabel id="5">
+                    <class>TLabel</class>
+                    <name>lblQtdeSoro</name>
+                    <x>10</x>
+                    <y>260</y>
+                    <color>#000000</color>
+                    <size>11</size>
+                    <style></style>
+                    <value>QUANT. SORO...............:</value>
+                </tlabel>
+                <tlabel id="6">
+                    <class>TLabel</class>
+                    <name>lblHormonio</name>
+                    <x>10</x>
+                    <y>310</y>
+                    <color>#000000</color>
+                    <size>11</size>
+                    <style></style>
+                    <value>HÔRMONIO....................:</value>
+                </tlabel>
+                <tlabel id="7">
+                    <class>TLabel</class>
+                    <name>lblQtdeHormonio</name>
+                    <x>10</x>
+                    <y>355</y>
+                    <color>#000000</color>
+                    <size>11</size>
+                    <style></style>
+                    <value>QUANT. HORMÔNIO.:</value>
+                </tlabel>
+                <tlabel id="8">
+                    <class>TLabel</class>
+                    <name>lblTotalAplicMatFemea</name>
+                    <x>10</x>
+                    <y>405</y>
+                    <color>#000000</color>
+                    <size>11</size>
+                    <style></style>
+                    <value>TOTAL APLIC MATRIZ F....:</value>
+                </tlabel>
+                <tlabel id="9">
+                    <class>TLabel</class>
+                    <name>lblTotalAplicMatMacho</name>
+                    <x>10</x>
+                    <y>455</y>
+                    <color>#000000</color>
+                    <size>11</size>
+                    <style></style>
+                    <value>TOTAL APLIC MATRIZ M...:</value>
+                </tlabel>
+                <tlabel id="10">
+                    <class>TLabel</class>
+                    <name>lblDoseAtual</name>
+                    <x>10</x>
+                    <y>505</y>
+                    <color>#000000</color>
+                    <size>11</size>
+                    <style></style>
+                    <value>DOSE ATUAL...........................:</value>
+                </tlabel>
+                <tentry id="11">
+                    <class>TEntry</class>
+                    <name>txtCodigo</name>
+                    <x>195</x>
+                    <y>29</y>
+                    <value></value>
+                    <mask></mask>
+                    <width>100</width>
+                    <maxlen>9</maxlen>
+                    <editable>0</editable>
+                    <tip></tip>
+                    <required></required>
+                </tentry>
+                <tdate id="12">
+                    <class>TDate</class>
+                    <name>dtaDtAplicacao</name>
+                    <x>194</x>
+                    <y>70</y>
+                    <value></value>
+                    <mask>dd/mm/yyyy</mask>
+                    <width>200</width>
+                    <editable>0</editable>
+                    <tip></tip>
+                    <required></required>
+                </tdate>
+                <tentry id="13">
+                    <class>TEntry</class>
+                    <name>txtPesoMatFemea</name>
+                    <x>195</x>
+                    <y>115</y>
+                    <value></value>
+                    <mask>0.00</mask>
+                    <width>100</width>
+                    <maxlen>0</maxlen>
+                    <editable>1</editable>
+                    <tip>Insira o Peso da Matriz Fêmea</tip>
+                    <required>1</required>
+                </tentry>
+                <tentry id="14">
+                    <class>TEntry</class>
+                    <name>txtPesoMatMacho</name>
+                    <x>194</x>
+                    <y>162</y>
+                    <value></value>
+                    <mask>0.00</mask>
+                    <width>100</width>
+                    <maxlen>0</maxlen>
+                    <editable>1</editable>
+                    <tip>Insira o peso atual do reprodutor</tip>
+                    <required></required>
+                </tentry>
+                <tdbcombo id="15">
+                    <class>TDBCombo</class>
+                    <name>dbCmbSoro</name>
+                    <database>dbwf</database>
+                    <model>Soro</model>
+                    <key>idSoro</key>
+                    <display>nomeSoro</display>
+                    <x>194</x>
+                    <y>210</y>
+                    <width>200</width>
+                    <tip>Selecione o tipo de soro a ser usado</tip>
+                </tdbcombo>
+                <tentry id="16">
+                    <class>TEntry</class>
+                    <name>txtQtdeSoro</name>
+                    <x>194</x>
+                    <y>260</y>
+                    <value></value>
+                    <mask>0.00</mask>
+                    <width>100</width>
+                    <maxlen>0</maxlen>
+                    <editable>0</editable>
+                    <tip></tip>
+                    <required></required>
+                </tentry>
+                <tdbcombo id="17">
+                    <class>TDBCombo</class>
+                    <name>dbCmbhormonio</name>
+                    <database>dbwf</database>
+                    <model>Hormonio</model>
+                    <key>idHormonio</key>
+                    <display>nomeHormonio</display>
+                    <x>194</x>
+                    <y>310</y>
+                    <width>200</width>
+                    <tip>Selecione o tipo de hormonio</tip>
+                </tdbcombo>
+                <tentry id="18">
+                    <class>TEntry</class>
+                    <name>txtQtdeHormonio</name>
+                    <x>194</x>
+                    <y>355</y>
+                    <value></value>
+                    <mask>0.00</mask>
+                    <width>100</width>
+                    <maxlen>0</maxlen>
+                    <editable>0</editable>
+                    <tip></tip>
+                    <required></required>
+                </tentry>
+                <tentry id="19">
+                    <class>TEntry</class>
+                    <name>txtTotalAplicMatFemea</name>
+                    <x>194</x>
+                    <y>405</y>
+                    <value></value>
+                    <mask>0.00</mask>
+                    <width>100</width>
+                    <maxlen>0</maxlen>
+                    <editable>0</editable>
+                    <tip></tip>
+                    <required></required>
+                </tentry>
+                <tentry id="20">
+                    <class>TEntry</class>
+                    <name>txtTotalAplicMatMacho</name>
+                    <x>194</x>
+                    <y>455</y>
+                    <value></value>
+                    <mask></mask>
+                    <width>100</width>
+                    <maxlen>0</maxlen>
+                    <editable>0</editable>
+                    <tip></tip>
+                    <required></required>
+                </tentry>
+                <tcombo id="21">
+                    <class>TCombo</class>
+                    <name>cmbDoseAtual</name>
+                    <items>1:PRIMEIRA
+2:SEGUNDA</items>
+                    <x>194</x>
+                    <y>505</y>
+                    <width>183</width>
+                    <tip>Selecione a dose a ser aplicada</tip>
+                </tcombo>
+                <tframe id="22">
+                    <class>TFrame</class>
+                    <name>fraMatrizFemea</name>
+                    <title>Matrizes Fêmeas</title>
+                    <x>445</x>
+                    <y>0</y>
+                    <width>281</width>
+                    <height>254</height>
+                    <child>
+                        <tpanel/>
+                    </child>
+                </tframe>
+                <tdbcheckgroup id="23">
+                    <class>TDBCheckGroup</class>
+                    <name>dbchkMatFemea</name>
+                    <database>dbwf</database>
+                    <model>Matriz</model>
+                    <key>idMatriz</key>
+                    <display>numeroChipMatriz</display>
+                    <x>450</x>
+                    <y>20</y>
+                    <tip>Selecione a Matriz à ser aplicada</tip>
+                    <value></value>
+                </tdbcheckgroup>
+                <tframe id="24">
+                    <class>TFrame</class>
+                    <name>fraMatrizMacho</name>
+                    <title>Reprodutores</title>
+                    <x>445</x>
+                    <y>260</y>
+                    <width>351</width>
+                    <height>249</height>
+                    <child>
+                        <tpanel>
+                            <tdbcheckgroup id="0">
+                                <class>TDBCheckGroup</class>
+                                <name>dbChkMatMacho</name>
+                                <database>dbwf</database>
+                                <model>Matriz</model>
+                                <key>idMatriz</key>
+                                <display>numeroChipMatriz</display>
+                                <x>5</x>
+                                <y>10</y>
+                                <tip>Selecione o reprodutor à ser aplicado</tip>
+                                <value>1</value>
+                            </tdbcheckgroup>
+                        </tpanel>
+                    </child>
+                </tframe>
+                <tbutton id="25">
+                    <class>TButton</class>
+                    <name>salvar</name>
+                    <x>20</x>
+                    <y>540</y>
+                    <value>Salvar</value>
+                    <icon>ico_save.png</icon>
+                    <action>onSave</action>
+                    <template>save.php</template>
+                </tbutton>
+                <tbutton id="26">
+                    <class>TButton</class>
+                    <name>novo</name>
+                    <x>125</x>
+                    <y>540</y>
+                    <value>Novo</value>
+                    <icon>ico_new.png</icon>
+                    <action>onEdit</action>
+                    <template>edit.php</template>
+                </tbutton>
+                <tbutton id="27">
+                    <class>TButton</class>
+                    <name>listar</name>
+                    <x>225</x>
+                    <y>540</y>
+                    <value>Listar</value>
+                    <icon>ico_view.png</icon>
+                    <action>onReload</action>
+                    <template>edit.php</template>
+                </tbutton>
+            </tpanel>
+        </child>
+    </tframe>
+</form>
