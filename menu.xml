@@ -46,7 +46,7 @@
     <menuitem label='Cadastros'>
         <menu>
             <menuitem label='Tanque'>
-                <icon>fa:cube fa-fw</icon>
+                <icon>fa:cube fa-fw green</icon>
                 <action>FrmTanque</action>
             </menuitem>
             <menuitem label='Incubadora'>

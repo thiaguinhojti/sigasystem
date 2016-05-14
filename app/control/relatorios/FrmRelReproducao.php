@@ -50,7 +50,7 @@ class FrmRelReproducao extends TPage
         
         // vertical box container
         $container = new TVBox;
-        $container->style = 'width: 90%';
+        $container->style = 'width: 60%';
         // $container->add(new TXMLBreadCrumb('menu.xml', __CLASS__));
         $container->add(TPanelGroup::pack('Relatório de Reprodução', $this->form));
         
@@ -88,7 +88,7 @@ class FrmRelReproducao extends TPage
             
             if ($objects)
             {
-                $widths = array(50,50,100,100,100,50,50,100,100,50);
+                $widths = array(30,50,75,75,75,75,75,100,100,100);
                 
                 switch ($format)
                 {
@@ -96,7 +96,8 @@ class FrmRelReproducao extends TPage
                         $tr = new TTableWriterHTML($widths);
                         break;
                     case 'pdf':
-                        $tr = new TTableWriterPDF($widths);
+                        $tr = new PReport($widths);
+                        
                         break;
                     case 'rtf':
                         if (!class_exists('PHPRtfLite_Autoloader'))
@@ -116,7 +117,7 @@ class FrmRelReproducao extends TPage
                 
                 // add a header row
                 $tr->addRow();
-                $tr->addCell('Reproducao', 'center', 'header', 10);
+                $tr->addCell('Relatório de Reprodução', 'center', 'header', 10);
                 
                 // add titles row
                 $tr->addRow();
@@ -125,8 +126,8 @@ class FrmRelReproducao extends TPage
                 $tr->addCell('Início', 'center', 'title');
                 $tr->addCell('Peso Fêmea', 'center', 'title');
                 $tr->addCell('Peso Macho', 'center', 'title');
-                $tr->addCell('Quantidade Fêmea', 'center', 'title');
-                $tr->addCell('Quantidade Macho', 'center', 'title');
+                $tr->addCell('Total Fêmea', 'center', 'title');
+                $tr->addCell('Total Macho', 'center', 'title');
                 $tr->addCell('Peso Total', 'center', 'title');
                 $tr->addCell('Total Hormônio', 'center', 'title');
                 $tr->addCell('Final Reprodução', 'center', 'title');
@@ -157,7 +158,7 @@ class FrmRelReproducao extends TPage
                 
                 // footer row
                 $tr->addRow();
-                $tr->addCell(date('Y-m-d h:i:s'), 'center', 'footer', 10);
+                $tr->addCell(date('d-m-Y H:i:s'), 'center', 'footer', 10);
                 // stores the file
                 if (!file_exists("app/output/Reproducao.{$format}") OR is_writable("app/output/Reproducao.{$format}"))
                 {
